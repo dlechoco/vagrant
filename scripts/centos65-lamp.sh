@@ -40,6 +40,9 @@ service mysqld start
 mysql -u root -e "SHOW DATABASES";
 
 # Download Starter Content Placeholder
+cd /vagrant
+sudo -u vagrant wget -q https://raw.githubusercontent.com/dlechoco/vagrant/master/files/index.html
+sudo -u vagrant wget -q https://raw.githubusercontent.com/dlechoco/vagrant/master/files/info.php
 
 # Restart Apache
 service httpd restart 
